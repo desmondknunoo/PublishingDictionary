@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.deemiensa.dictionary">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.ORANGE"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6209132923798462~1953698971"/>
+
+<!--        <activity
+            android:name=".splash"
+            android:theme="@style/AppTheme.ORANGE.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+        <activity android:name=".main"
+            android:label="@string/app_name_plus"
+            android:windowSoftInputMode="stateHidden">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".favourites"
+            android:label="Favourites"
+            android:parentActivityName=".favourites"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.RED"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.deemiensa.dictionary.favourites" />
+        </activity>
+        <activity
+            android:name=".favouriteDisplay"
+            android:label=" "
+            android:parentActivityName=".favouriteDisplay"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PURPLE"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.deemiensa.dictionary.favouriteDisplay" />
+        </activity>
+        <activity
+            android:name=".about"
+            android:label="About"
+            android:parentActivityName=".about"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ORANGE.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.deemiensa.dictionary.about" />
+        </activity>
+        <activity
+            android:name=".dictionaryDisplay"
+            android:label=" "
+            android:parentActivityName=".dictionaryDisplay"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ORANGE"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.deemiensa.dictionary.dictionaryDisplay" />
+        </activity>
+        <activity
+            android:name=".diacritics"
+            android:label="Alphabets &amp; Diacritics"
+            android:parentActivityName=".diacritics"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BLUE"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.deemiensa.dictionary.diacritics" />
+        </activity>
+        <activity
+            android:name=".proofreadingMarks"
+            android:label="Proofreading Marks"
+            android:parentActivityName=".proofreadingMarks"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GREEN"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.deemiensa.dictionary.proofreadingMarks" />
+        </activity>
+        <activity android:name=".onBoarding"
+            android:parentActivityName=".onBoardingHelp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ORANGE.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.deemiensa.dictionary.onBoardingHelp" />
+        </activity>
+        <activity android:name=".feedback"
+            android:label="Feedback"
+            android:parentActivityName=".feedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.TEAL"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.deemiensa.dictionary.feedback" />
+        </activity>
+        <activity android:name=".developers"
+            android:label="Developers"
+            android:parentActivityName=".developers"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BROWN"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.deemiensa.dictionary.developers" />
+        </activity>
+        <activity android:name=".onBoardingHelp"
+            android:parentActivityName=".onBoardingHelp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ORANGE.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.deemiensa.dictionary.onBoardingHelp" />
+        </activity>
+    </application>
+
+</manifest>

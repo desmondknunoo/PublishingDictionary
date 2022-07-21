@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.deemiensa.fudrin.Home.HomeActivity">
+
+
+
+
+    <item
+        android:id="@+id/about"
+        android:title="Developers"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/rate"
+        android:title="Rate us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/feedback"
+        android:title="Feedback"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/help"
+        app:showAsAction="never"
+        android:title="Help" />
+
+</menu>

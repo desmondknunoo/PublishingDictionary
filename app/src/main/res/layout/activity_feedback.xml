@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/tools"
+    android:paddingStart="10dp"
+    android:paddingLeft="10dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/button19"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_teal" />
+
+
+            <EditText
+                android:id="@+id/EditText01"
+                android:paddingBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="Please type your Feedback here"
+                android:inputType="textMultiLine"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Button1"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="50dp"
+                app:cardBackgroundColor="#e8e8e8"
+                app:cardCornerRadius="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/title_tex1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_teal"
+                    android:gravity="center"
+                    android:text="Send"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/button119"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_teal" />
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:hint="Please type your problem here"
+                android:inputType="textMultiLine"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Button2"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="50dp"
+                app:cardBackgroundColor="#e8e8e8"
+                app:cardCornerRadius="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                >
+
+
+
+                <TextView
+                    android:id="@+id/title_tex"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:text="Send"
+                    android:background="@drawable/button_teal"
+                    android:textColor="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                android:text="Before you report a problem, do well to check ''Help''. You might find the solution there."
+                android:textColor="@color/blackText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/test_banner_ad_unit">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

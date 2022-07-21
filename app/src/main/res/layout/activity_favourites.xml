@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".main">
+ <RelativeLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@color/primaryDarkColorRed"
+     android:id="@+id/search1">
+     <SearchView
+         android:id="@+id/search"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:iconifiedByDefault="false"
+         android:layout_margin="10dp"
+         android:background="@drawable/red_search_rounded_background"
+         android:queryHint="@string/search_favourites" />
+ </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_favourites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favourites_red"
+        android:textColor="@color/blackText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:text="No Favourites"/>
+
+    <ImageView
+        android:id="@+id/favourites_red"
+        android:background="@drawable/ic_favourite_red"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No Favourites"/>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@id/search1"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/adView"/>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/test_banner_ad_unit">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

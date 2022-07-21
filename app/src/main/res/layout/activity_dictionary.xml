@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".dictionaryDisplay">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/layout"
+        android:background="@color/primaryDarkColorOrange"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/word"
+            android:text="Word"
+            android:layout_width="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_toLeftOf="@id/icons"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:textIsSelectable="true"
+            android:textColor="@color/primaryTextColorRed"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/icons" />
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:id="@+id/icons"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageButton
+                android:id="@+id/bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="mButton"
+                android:layout_margin="5dp"
+                android:background="@color/primaryDarkColorOrange"
+                android:src="@mipmap/ic_bookmark_white"
+                android:layout_toLeftOf="@id/share"
+                android:layout_toStartOf="@id/share"/>
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/primaryDarkColorOrange"
+                android:src="@mipmap/ic_share_white"
+                android:text="share"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:layout_above="@id/adView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part of Speech"
+            android:id="@+id/type"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textIsSelectable="true"
+            android:textColor="@color/blackText"
+            android:textStyle="bold|italic"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <View
+            android:id="@+id/seperator"
+            android:layout_below="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/primaryDarkColorOrange" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meaning"
+            android:paddingTop="10dp"
+            android:textColor="@color/blackText"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/dictionary"
+            android:textIsSelectable="true"
+            android:layout_below="@+id/seperator"
+            android:layout_alignParentLeft="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/test_banner_ad_unit">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
