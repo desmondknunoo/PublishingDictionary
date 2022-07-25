@@ -1,8 +1,4 @@
 # PublishingDictionary
-https://play-lh.googleusercontent.com/52HWweGxpeaq6jtGkrFWMNK2pE2eKp1HxvuZllSo9LU_1Fhu8aeC6hsfztP0M7MUhIM=w1052-h592
-https://play-lh.googleusercontent.com/-bjcLrwqp80knPMDvP1b1U15pOEBkjjdcx_4rkUkD6fgJ9JcFlJ7SwkMd2KHa5Qv_g=w1052-h592
-https://play-lh.googleusercontent.com/Kv7E2_Rt4XeQ_z9fg8u7UIgR3tQrHmWP98RbxH8pOIP-VxrQqlFPtK7q5kCnknkTx5g=w1052-h592
-https://play-lh.googleusercontent.com/OLORJUNfwVYVzne8HP5AVryqN26yH4YKALbtC_2GmL1d5f8tscMEV074X2SfdUnab7s=w1052-h592
 
 Orange Dictionary app is an offline dictionary containing terms and their meanings in publishing, printing, design and illustration industry.
 
