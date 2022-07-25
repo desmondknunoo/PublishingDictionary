@@ -1,5 +1,7 @@
 # PublishingDictionary
 
+Google Play Store [Link](https://play.google.com/store/apps/details?id=com.deemiensa.dictionary). 
+
 Orange Dictionary app is an offline dictionary containing terms and their meanings in publishing, printing, design and illustration industry.
 
 The app will benefit players in the publishing and printing industry, editors, designers, typesetters, binders, machine minders, booksellers, Image setters, publishing schools and interested persons in and outside Ghana.
@@ -29,3 +31,5 @@ Features of the app includes:
 • Feedback: This feature allows you to send your feedback, suggestions or comments to the developers. You can also report a problem that may have escaped the developers.
 
 • Help: This feature gives you guidelines and tips to help you understand how the app works.
+
+
