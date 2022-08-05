@@ -11,10 +11,6 @@
     <string name="about">About</string>
     <string name="bookmark">Bookmark</string>
 
-
-    <string name="banner_ad_unit_id">ca-app-pub-6209132923798462/4743513846</string>
-    <string name="test_banner_ad_unit">ca-app-pub-3940256099942544/6300978111</string>
-
     <string name="version">version</string>
     <string name="about_app">Orange Dictionary app is an offline dictionary containing terms and their meanings in publishing, printing,
         design and illustration industry. The app will benefit players in the publishing and printing industry,
@@ -35,17 +31,9 @@
 \n\n• Feedback: This feature allows you to send your feedback, suggestions or comments to the developers. You can also report a problem that may have escaped the developers.
 \n\n• Help: This feature gives you guidelines and tips to help you understand how the app works. </string>
 
-    <!-- OnBoard Screen. -->
-   <!-- <string name="ob_header1">Unemployed but love cooking?</string>
-    <string name="ob_header2">Too busy to cook?</string>
-    <string name="ob_header3">Hate being in long queues for food &amp; drinks?</string>
-    <string name="ob_header4">Busy going to the market for your groceries?</string>-->
+    
     <string name="ob_get_started">PROCEED</string>
- <!--   <string name="ob_desc1">Cook4Cash to Earn more!</string>
-    <string name="ob_desc2">Wedding Buffet?\nBirthday Cakes?\nPizza for her Birthday?\nFudrin is here!</string>
-    <string name="ob_desc3">Food &amp; Drinks @ your doorstep!</string>
-    <string name="ob_desc4">Fudrin, Your 100% solution!</string>
--->
+
     <string name="license_intro">
         \nOrange Dictionary for Android is built using open source software:
         \n\n• Android Open Source Project
